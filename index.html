@@ -12,19 +12,21 @@
     </header>
     <main>
         <section>
-            <input id="cajaTextoAEncriptar" name="comentarios" rows="4" cols="50" class="" placeholder="Ingrese el texto aqui"></textarea>            
-            <div>
-                <h6>Solo letras minúsculas y sin acentos</h6>
+            <textarea id="cajaTextoAEncriptar" name="comentarios" rows="10" cols="30" class="textArea__encriptar" placeholder="Ingrese el texto aqui"></textarea>            
+            <div class="presentacion__informacion">
+                <img src="assets/img/admiracion.png">
+                <h6 class="informacion">Solo letras minúsculas y sin acentos.</h6>
             </div>
-            <div>
-                <button type="button" id="botonEncriptar" class="" >Encriptar</button>
-                <button type="button" id="botonDesencriptar">Desencriptar</button>
+            <div class="botones">
+                <button type="button" id="botonEncriptar" class="btn__encriptar" >Encriptar</button>
+                <button type="button" id="botonDesencriptar" class="btn__desencriptar">Desencriptar</button>
             </div>            
         </section>
         <section>
-            <textarea id="cajaDeTextoEncriptado" name="comentarios" rows="4" cols="50" class="" readonly></textarea>
+            <textarea id="cajaDeTextoEncriptado" name="comentarios" rows="42" cols="50" class="mensaje" readonly placeholder="Ningún mensaje fue encontrado 
+Ingresa el texto que desees encriptar o desencriptar."></textarea>          
             <div>
-                <button>Copiar</button>
+                <button class="btn__copiar">Copiar</button>
             </div>
         </section>        
     </main>    
