@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --color-primario:#F3F5FC;
     --color-secundario:#0A3871;
-    --color-terciario:#22D4FD;
+    --color-terciario:#D8DFE8;
     --color-hover:#272727;
     --fuente-Jost:'Jost', sans-serif;
+    --fuente-Inter: 'Inter', sans-serif;
     --fuente-montserrat:'Montserrat', sans-serif;
     --fuente-krona: 'Krona One', sans-serif;
 }
@@ -17,14 +17,14 @@
 
 main{
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     margin-left: 130px;    
-    gap: 100px;
+    gap: 250px;
 }
 
 .logo{
-    padding-top: 10px;
-    margin-left: 10px;
+    padding-top: 40px;
+    margin-left: 40px;
     width:10%;
 }
 
@@ -49,22 +49,23 @@ main{
     outline: none;
 }
 
-.mensaje{
-    position: relative;
+/*Caja de Texto desencriptado*/
+.texto-encriptado__presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+.texto-encriptado__text-area{
     resize: none;
     background-color: white;
     background-repeat: no-repeat;
     background-image: url(assets/img/Muñeco.png);
-    background-position: center center;
-    /*border: none;*/
+    background-position: center 130px;    
     border-radius: 24px;
-    color: #2196F3;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;    
-    
+    color: #2196F3;    
+    margin-top: -50px;       
 }
-.mensaje::placeholder{
+.texto-encriptado__text-area::placeholder{
     color: var(--color-hover);
     position: absolute;
     text-align: center;    
@@ -72,18 +73,48 @@ main{
     
 }
 
-.mensaje:focus{
+.texto-encriptado__text-area:focus{
     outline: none;
+}
+
+.texto-encriptado__mensaje__presentacion{
+    display: flex;
+    flex-direction: column;
+    margin-top: -240px;
+    text-align: center;    
+    background-color: white;
+    gap: 16px;
+}
+.texto-encriptado__mensaje__strong{
+    color: #343A40;
+    font-family: var(--fuente-Inter);
+    font-weight: 600;
+    font-size: 24px;
+    background-color: white;
+}
+.texto-encriptado__mensaje__normal{
+    color: #495057;
+    font-family: var(--fuente-Inter);    
+    background-color: white;
+    font-size: 16px;
+}
+
+.texto-encriptado__boton{
+    background-color: white;
+}
+
+img{
+    background-color: transparent;
 }
 
 .botones{
     display: flex;
-    margin-top: 18px;    
+    margin-top: 18px;        
 }
 
 .btn__encriptar{
-    background-color: yellowgreen;
-    border: 1px solid yellowgreen;
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
     border-radius: 24px;
     color: white;
     cursor: pointer;
@@ -92,10 +123,10 @@ main{
 }
 
 .btn__desencriptar{
-    background-color: grey;
-    border: 1px solid yellowgreen;
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-terciario);
     border-radius: 24px;
-    color: white;
+    color: var(--color-secundario);
     cursor: pointer;
     height: 67px;
     margin-left: 30px;
@@ -104,17 +135,17 @@ main{
 
 .btn__copiar{
     border: 1px solid blue;
-    border-radius: 24px;
+    border-radius: 24px;    
     color: blue;
     cursor:pointer;
-    height: 67px;
-    margin-left: 140px;
-    margin-top: -65px;
-    position: absolute;
-    width: 336px;
-    height: 50px;
-    display: none;
+    height: 40px;
+    width: 328px;
+    margin-top: 70px;  
+    background-color: white;       
 }
+
+
+/* Estilo cartel de "Solo letras minúsculas y sin acentos."*/
 .presentacion__informacion{
     display: flex;
     gap: 8px;
@@ -126,14 +157,27 @@ main{
     font-size: 12px;
 }
 
-.presentacion__contenedor{
-    margin: 80px 90px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #2196F3;
-    gap: 30%;
-    
+/*Estilo del Pie de Página*/
+
+.footer__presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
-
-
+.footer__presentacion__nombre{
+    display: flex;   
+    align-items: center;
+}
+.footer__iconos{
+    width: 32px;
+    height: 30px;
+}
+.footer__presentacion__iconos{
+    display: flex;
+    text-align: center;
+    gap: 100px;
+}
+footer{
+    margin-top: 20px;
+}
