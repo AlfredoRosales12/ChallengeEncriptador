@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --color-primario:#F3F5FC;
-    --color-secundario:#0A3871;
-    --color-terciario:#D8DFE8;
+    --color-primario:#FEFBF6;
+    --color-secundario:#4B8673;
+    --color-terciario:#F5DF99;
+    --color-cuarternario:#5FD068;
     --color-hover:#272727;
     --fuente-Jost:'Jost', sans-serif;
     --fuente-Inter: 'Inter', sans-serif;
@@ -11,16 +12,24 @@
 }
 *{
     margin: 0;
-    padding: 0;
-    background-color:var(--color-primario);
+    padding: 0;    
 }
-
 main{
     display: flex;
-    margin-bottom: 0px;
     margin-left: 130px;    
-    gap: 250px;
+    gap: 290px;    
 }
+
+
+.background{
+    background-image: url(assets/img/2.png);
+    background-repeat: no-repeat;
+    background-color: var(--color-primario);
+    background-position: right;
+    min-height: 100%;    
+}
+
+
 
 .logo{
     padding-top: 40px;
@@ -28,7 +37,8 @@ main{
     width:10%;
 }
 
-.textArea__encriptar{    
+.textArea__encriptar{ 
+    background-color: transparent;   
     border: none;
     color: var(--color-secundario);
     font-size: 30px;
@@ -103,10 +113,6 @@ main{
     background-color: white;
 }
 
-img{
-    background-color: transparent;
-}
-
 .botones{
     display: flex;
     margin-top: 18px;        
@@ -120,6 +126,10 @@ img{
     cursor: pointer;
     height: 67px;
     width: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .btn__desencriptar{
@@ -131,12 +141,16 @@ img{
     height: 67px;
     margin-left: 30px;
     width: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .btn__copiar{
-    border: 1px solid blue;
+    border: 1px solid var(--color-secundario);
     border-radius: 24px;    
-    color: blue;
+    color: var(--color-secundario);
     cursor:pointer;
     height: 40px;
     width: 328px;
@@ -163,21 +177,26 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    background: linear-gradient(to left, var(--color-secundario), var(--color-primario)); /* Degradado */
 }
 .footer__presentacion__nombre{
     display: flex;   
     align-items: center;
+    font-family: var(--fuente-montserrat);
+    margin-top: 10px;
 }
-.footer__iconos{
-    width: 32px;
-    height: 30px;
-}
+
 .footer__presentacion__iconos{
     display: flex;
     text-align: center;
-    gap: 100px;
+    gap: 50px;    
 }
-footer{
-    margin-top: 20px;
+
+.section__entrada{
+    margin-bottom: 10px;
+}
+
+.footer__presentacion__links{
+    color: #272727;
+    text-decoration: none;
 }
