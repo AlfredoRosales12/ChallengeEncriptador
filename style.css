@@ -93,7 +93,7 @@ main{
     margin-top: -240px;
     text-align: center;    
     background-color: white;
-    gap: 16px;
+    gap: 16px;    
 }
 .texto-encriptado__mensaje__strong{
     color: #343A40;
@@ -107,10 +107,6 @@ main{
     font-family: var(--fuente-Inter);    
     background-color: white;
     font-size: 16px;
-}
-
-.texto-encriptado__boton{
-    background-color: white;
 }
 
 .botones{
@@ -154,8 +150,9 @@ main{
     cursor:pointer;
     height: 40px;
     width: 328px;
-    margin-top: 70px;  
-    background-color: white;       
+    margin-top: -60px;  
+    background-color: white; 
+    display: none;      
 }
 
 

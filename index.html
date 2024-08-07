@@ -23,7 +23,7 @@
                         <img src="assets/img/candado_cerrado_icono.png" alt="" width="30px" height="30px">
                         Encriptar
                     </button>
-                    <button type="button" id="botonDesencriptar" class="btn__desencriptar">
+                    <button type="button" id="botonDesencriptar" class="btn__desencriptar" onclick="btnDesencriptar()">
                         <img src="assets/img/candado_abierto_icono.png" alt="" width="30px" height="30px">
                         Desencriptar
                     </button>
@@ -31,7 +31,7 @@
             </section>
             <section class="texto-encriptado__presentacion">
                 <textarea id="cajaDeTextoEncriptado" name="comentarios" rows="45" cols="50" class="texto-encriptado__text-area" readonly placeholder=""></textarea>
-                <div class="texto-encriptado__mensaje__presentacion">
+                <div id="mensajeAuxiliar" class="texto-encriptado__mensaje__presentacion">
                     <div class="texto-encriptado__mensaje__strong">
                         Ningún mensaje fue <br> encontrado
                     </div>
@@ -40,9 +40,7 @@
                     </div>                
                     
                 </div>        
-                <div class="texto-encriptado__boton">
-                    <button class="btn__copiar">Copiar</button>
-                </div>               
+                <button class="btn__copiar">Copiar</button>                               
             </section>
         </main>  
     </div>  
