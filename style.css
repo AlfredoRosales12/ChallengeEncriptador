@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --color-primario:#FEFBF6;
     --color-secundario:#4B8673;
@@ -9,6 +9,7 @@
     --fuente-Inter: 'Inter', sans-serif;
     --fuente-montserrat:'Montserrat', sans-serif;
     --fuente-krona: 'Krona One', sans-serif;
+    --fuente-Raleway: 'Releway', sans-serif;
 }
 *{
     margin: 0;
@@ -17,7 +18,7 @@
 main{
     display: flex;
     margin-left: 130px;    
-    gap: 290px;    
+    gap: 300px;    
 }
 
 
@@ -44,7 +45,7 @@ main{
     font-size: 30px;
     font-family: var(--fuente-Jost);    
     margin-top: 90px;
-    /*text-transform: lowercase;*/
+    text-transform: lowercase;
     resize: none;
 }
 
@@ -72,8 +73,14 @@ main{
     background-image: url(assets/img/Muñeco.png);
     background-position: center 130px;    
     border-radius: 24px;
-    color: #2196F3;    
-    margin-top: -50px;       
+    color: var(--color-secundario);    
+    margin-top: -50px;
+    padding: 5%;
+    font-family: var(--fuente-Raleway);
+    font-size: 30px;
+    width: 400px;
+    height: 635px;
+    
 }
 .texto-encriptado__text-area::placeholder{
     color: var(--color-hover);
@@ -196,4 +203,18 @@ main{
 .footer__presentacion__links{
     color: #272727;
     text-decoration: none;
+}
+
+.caja__alerta{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f3f2f1;
+    color: #767574;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: var(--fuente-Inter);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: none; /* Oculto por defecto */
 }
