@@ -24,6 +24,8 @@ function btnDesencriptar(){
         mensaje.value=textoDesencriptado;
         textArea.value="";
         mensaje.style.backgroundImage = "none";
+        mensajeAuxiliar.style.display="none";
+        botonCopiar.style.display="block";
     }
 }
 
@@ -62,8 +64,8 @@ document.getElementById("cajaTextoAEncriptar").addEventListener("input", functio
         .replace(/[éèëê]/g, 'e')
         .replace(/[íìïî]/g, 'i')
         .replace(/[óòöôõ]/g, 'o')
-        .replace(/[úùüû]/g, 'u');        
-        
+        .replace(/[úùüû]/g, 'u')       
+        .replace(/[^a-z0-9\sñ]/g, ''); // Elimina cualquier otro carácter especial que no este dentro del rango a-z, 0-9 espacio y ñ
 });
 
 

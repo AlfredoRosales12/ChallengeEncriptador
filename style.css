@@ -16,6 +16,9 @@
     margin: 0;
     padding: 0;    
 }
+body{
+    background-color: var(--color-primario);
+}
 
 main{
     display: flex;
@@ -44,6 +47,7 @@ main{
     font-size: 30px;
     font-family: var(--fuente-Jost);    
     margin-top: 90px;
+    margin-bottom: 25px;
     text-transform: lowercase;
     resize: none;
     height: 65%;
@@ -79,6 +83,7 @@ main{
     color: var(--color-secundario);    
     margin-top: -50px;
     padding: 5%;
+    padding-bottom: 15%;
     font-family: var(--fuente-Raleway);
     font-size: 30px;
     width: 70%;
@@ -232,6 +237,7 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        gap: 90px;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -246,11 +252,15 @@ main{
     .texto-encriptado__text-area{
         margin-top: 0px;
         background-image: none;
+        width: 90%;
     }
     .botones{
         justify-content: space-around;
     }
     .footer__presentacion{
         margin-top: 100%;
+    }
+    .textArea__encriptar{
+        width: auto;
     }
 }
