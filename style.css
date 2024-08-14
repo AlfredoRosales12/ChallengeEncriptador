@@ -11,26 +11,25 @@
     --fuente-krona: 'Krona One', sans-serif;
     --fuente-Raleway: 'Releway', sans-serif;
 }
+
 *{
     margin: 0;
     padding: 0;    
 }
+
 main{
     display: flex;
-    margin-left: 130px;    
-    gap: 300px;    
+    margin-left: 130px;
+    height: 86%;
+    justify-content: space-between;
 }
-
-
 .background{
     background-image: url(assets/img/2.png);
     background-repeat: no-repeat;
     background-color: var(--color-primario);
     background-position: right;
-    min-height: 100%;    
+    height: 100vh;
 }
-
-
 
 .logo{
     padding-top: 40px;
@@ -47,6 +46,8 @@ main{
     margin-top: 90px;
     text-transform: lowercase;
     resize: none;
+    height: 65%;
+    width: 75%;
 }
 
 .textArea__encriptar::placeholder{    
@@ -64,7 +65,9 @@ main{
 .texto-encriptado__presentacion{
     display: flex;
     flex-direction: column;
-    align-items: center;        
+    align-items: center;
+    width: 35%;
+    height: auto;
 }
 .texto-encriptado__text-area{
     resize: none;
@@ -78,9 +81,8 @@ main{
     padding: 5%;
     font-family: var(--fuente-Raleway);
     font-size: 30px;
-    width: 400px;
-    height: 635px;
-    
+    width: 70%;
+    height: 95%;    
 }
 .texto-encriptado__text-area::placeholder{
     color: var(--color-hover);
@@ -97,10 +99,11 @@ main{
 .texto-encriptado__mensaje__presentacion{
     display: flex;
     flex-direction: column;
-    margin-top: -240px;
+    margin-top: -240px;    
     text-align: center;    
     background-color: white;
-    gap: 16px;    
+    gap: 16px;
+    width: 70%;    
 }
 .texto-encriptado__mensaje__strong{
     color: #343A40;
@@ -156,7 +159,7 @@ main{
     color: var(--color-secundario);
     cursor:pointer;
     height: 40px;
-    width: 328px;
+    width: 70%;
     margin-top: -60px;  
     background-color: white; 
     display: none;      
@@ -197,7 +200,9 @@ main{
 }
 
 .section__entrada{
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;   
+    width: 50%;
 }
 
 .footer__presentacion__links{
@@ -217,4 +222,35 @@ main{
     font-family: var(--fuente-Inter);
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
     display: none; /* Oculto por defecto */
+}
+
+@media (max-width:1200px){
+    .background{
+        background-image: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .section__entrada{
+        width: 100%;
+    }
+    .texto-encriptado__presentacion{
+        margin-top: 0px;
+        height: 50%;
+        width: auto;
+    }
+    .texto-encriptado__text-area{
+        margin-top: 0px;
+        background-image: none;
+    }
+    .botones{
+        justify-content: space-around;
+    }
+    .footer__presentacion{
+        margin-top: 100%;
+    }
 }

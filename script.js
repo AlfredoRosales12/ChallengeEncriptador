@@ -7,20 +7,24 @@ const botonCopiar=document.querySelector(".btn__copiar")
 const copyAlert= document.querySelector("#cajaConfirmacion"); //Caja de confirmación de copiado
 
 function btnEncriptar(){
-    const textoEncriptado=encriptar(textArea.value);
-    mensaje.value=textoEncriptado;
-    //console.log(textoEncriptado);
-    textArea.value=""; //limpieza del text area del texto dado por el usuario.
-    mensaje.style.backgroundImage = "none";
-    mensajeAuxiliar.style.display="none";
-    botonCopiar.style.display="block";
+    if(textArea.value){
+        const textoEncriptado=encriptar(textArea.value);
+        mensaje.value=textoEncriptado;
+        //console.log(textoEncriptado);
+        textArea.value=""; //limpieza del text area del texto dado por el usuario.
+        mensaje.style.backgroundImage = "none";
+        mensajeAuxiliar.style.display="none";
+        botonCopiar.style.display="block";
+    }    
 }
 
 function btnDesencriptar(){
-    const textoDesencriptado = desencriptar(textArea.value);
-    mensaje.value=textoDesencriptado;
-    textArea.value="";
-    mensaje.style.backgroundImage = "none";
+    if(textArea.value){
+        const textoDesencriptado = desencriptar(textArea.value);
+        mensaje.value=textoDesencriptado;
+        textArea.value="";
+        mensaje.style.backgroundImage = "none";
+    }
 }
 
 //Función que encripta el texto.
