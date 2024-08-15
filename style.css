@@ -71,7 +71,7 @@ main{
     flex-direction: column;
     align-items: center;
     width: 35%;
-    height: auto;
+    height: 95%;
 }
 .texto-encriptado__text-area{
     resize: none;
@@ -253,6 +253,7 @@ main{
         margin-top: 0px;
         background-image: none;
         width: 90%;
+        height: 75%;
     }
     .botones{
         justify-content: space-around;
