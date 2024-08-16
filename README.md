@@ -1,17 +1,20 @@
 # Encriptador de Texto
+![Static Badge](https://img.shields.io/badge/release_date-august-green)
+![Static Badge](https://img.shields.io/badge/Status-Under_review-purple)
+
 
 ## Descripción
 
 Este proyecto es una aplicación web simple que permite a los usuarios encriptar y desencriptar texto utilizando técnicas básicas de cifrado. La aplicación está construida con HTML, CSS y JavaScript puro, lo que la hace ligera y fácil de ejecutar en cualquier navegador moderno.
 
-## Características
+## :pencil: Características
 
 - **Encriptación de Texto:** Convierte el texto introducido en un formato encriptado utilizando un conjunto específico de reglas.
 - **Desencriptación de Texto:** Permite revertir el texto encriptado a su formato original usando las mismas reglas.
 - **Interfaz de Usuario Sencilla:** Diseñada con CSS para ofrecer una experiencia de usuario clara y accesible.
 - **Compatibilidad con Navegadores:** Funciona en todos los navegadores modernos.
 
-## Llaves de Encriptación
+## :lock: :unlock: Llaves de Encriptación
 
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
@@ -23,9 +26,9 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 
 ## Requisitos
 
-- **Letras Minúsculas:** Debe funcionar solo con letras minúsculas.
-- **Sin Acentos ni Caracteres Especiales:** No deben ser utilizadas letras con acentos ni caracteres especiales.
-- **Conversión Bidireccional:** Debe ser posible convertir una palabra a su versión encriptada y también devolver una palabra encriptada a su versión original.
+- Debe funcionar solo con letras minúsculas.
+- No deben ser utilizadas letras con acentos ni caracteres especiales.
+- Debe ser posible convertir una palabra a su versión encriptada y también devolver una palabra encriptada a su versión original.
 
 ### Ejemplos de Uso:
 
@@ -40,10 +43,23 @@ La página consta de una **Entrada de Texto:** para la inserción del texto que 
 - **Visualización del Resultado:** El resultado debe ser mostrado en la pantalla.
 - **Copiar al Portapapeles:** Un botón que copie el texto encriptado/desencriptado al portapapeles, con la misma funcionalidad que la combinación de teclas **Ctrl+C** o la opción "copiar" del menú de las aplicaciones.
 
-![Imagen de la pagina]()
+![Imagen de la pagina](assets/img/readme/inicio_encriptador.png)
 
+## :computer: Ejemplo de uso 
+   Encriptaremos el siguiente mensaje: "bienvenidos a mi encriptador".
+   ![Imagen de la pagina](assets/img/readme/texto_a_encriptar.png)
 
-## Instalación
+   Al dar clic en el boton "Encriptar" podemos ver que nos aparece el mensaje desencriptado a la derecha y del mismo modo abajo del mensaje encriptado aparece un botón de copiar.
+   ![Imagen de la pagina](assets/img/readme/texto_encriptado.png)
+
+   Si damos clic al botón de copiar, en medio de la pantalla aparecerá un cartel por aproximadamente 2 segundos con la leyenda: "Texto copiado al portapapeles" dado lo anterior sabremos que nuestro texto ya está en el portapapeles listo para pegarlo.
+   ![Imagen de la pagina](assets/img/readme/copiar_texto.png)
+
+   Por ultimo desencriptemos el mensaje.
+   ![Imagen de la pagina](assets/img/readme/texto_a_desencriptar.png)   
+   ![Imagen de la pagina](assets/img/readme/texto_desencriptado.png)   
+   
+## :hammer_and_wrench: Instalación
 
 No es necesaria la instalación. Simplemente descarga el proyecto y abre el archivo `index.html` en tu navegador.
 
@@ -55,20 +71,20 @@ No es necesaria la instalación. Simplemente descarga el proyecto y abre el arch
 1. Clona este repositorio o descarga los archivos.
 
    ```bash
-   git clone https://github.com/tu_usuario/encriptador-de-texto.git
+   git clone https://github.com/AlfredoRosales12/ChallengeEncriptador
 
 
 ## Contribuciones:
 
 Las observaciones, contribuciones,etc.  son bienvenidas. Si encuentras algún error o tienes alguna sugerencia, por favor, abre un issue en este repositorio.
 
-## Licencia:
+## :copyright: Licencia:
 
 Este proyecto está bajo la licencia OpenSource, Creado por Alfredo Rosales [@AlfredoRosales12](https://github.com/AlfredoRosales12)
 
 ¡Diviértete encriptando!
 
-## Contact
+## :iphone: Contact
 
 Te puedes comunicar conmigo a través de los siguientes canales de comunicación:
 
