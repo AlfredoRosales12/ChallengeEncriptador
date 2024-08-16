@@ -196,12 +196,14 @@ main{
     align-items: center;
     font-family: var(--fuente-montserrat);
     margin-top: 10px;
+    gap: 15px;
 }
 
 .footer__presentacion__iconos{
     display: flex;
     text-align: center;
-    gap: 50px;    
+    margin-top: 10px;
+    gap: 70px;    
 }
 
 .section__entrada{
