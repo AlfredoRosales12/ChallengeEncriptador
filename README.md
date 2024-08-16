@@ -47,7 +47,11 @@ La página consta de una **Entrada de Texto:** para la inserción del texto que 
 
 ## :computer: Ejemplo de uso 
    Encriptaremos el siguiente mensaje: "bienvenidos a mi encriptador".
+   > [!NOTE]
+   > Si el usuario llega a ingresar una letra con acento, un carácter especial o una letra mayúscula, el programa por si solo intercambia las letras con acento a su versión sin acento, las mayúsculas y carácteres no deja ni siquiera ingresarlos.
+   
    ![Imagen de la pagina](assets/img/readme/texto_a_encriptar.png)
+   especiales ni si quiera se pueden escribrir.
 
    Al dar clic en el boton "Encriptar" podemos ver que nos aparece el mensaje desencriptado a la derecha y del mismo modo abajo del mensaje encriptado aparece un botón de copiar.
    ![Imagen de la pagina](assets/img/readme/texto_encriptado.png)
