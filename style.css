@@ -230,6 +230,10 @@ main{
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
     display: none; /* Oculto por defecto */
 }
+.redsocial{
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+}
 
 @media (max-width:1200px){
     .background{
